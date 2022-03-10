@@ -3,3 +3,133 @@
     margin: 0;
     padding: 0;
 }
+
+/* Header */
+
+.navigation{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.navigation > a{
+    width: 35%;
+    padding: 25px 80px 0;
+    font-size: 20px;
+    color: rgba(56,88,214,255);
+    font-weight: bold;
+    z-index: 200;
+}
+
+.navigation > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65%;
+    padding: 20px;
+    background: linear-gradient(to right, #fff 0%, #fff 23%, #e9f1fc 23%, #e9f1fc 100%)
+}
+
+.navigation > div > a > button{
+    padding: 12px 20px;
+    margin-left: 40px;
+    border: none;
+    background: rgba(54,86,212,255);
+    border-radius: 4px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;   
+    justify-content: space-between;
+    list-style: none;
+    width: 400px;
+    border: 1px solid black;
+}
+
+.menu > li{
+    font-size: 15px;
+    color: rgba(109,123,147,255);
+    font-weight: bold;
+}
+
+/* Banner */
+.banner{
+    display: flex; 
+}
+
+.banner > *{
+    width: 50%;
+}
+
+.banner > article:not(.triangle-down){
+    padding-top: 70px;
+    padding-bottom: 20px;
+    padding-left: 80px;
+}
+
+.banner > article > .triangle-down{
+    width: 75px;
+    height: 75px;
+    /* background: tomato; */
+    background: linear-gradient(135deg, #fff 50%, #f4f6fb 50%);
+    transform: rotate(45deg);
+    margin-top: -108px;
+    z-index: 100;
+    margin-left: -30px;
+}
+
+.banner > article > h1{
+    font-size: 45px;
+    /* margin: 50px auto 0; */
+    width: 300px; 
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+.banner > article > p{
+    width: 270px;
+    margin-bottom: 30px;
+}
+
+.triangle-left{
+    width: 100px;
+    height: 100px;
+    transform: rotate(45deg);
+    position: absolute;
+    margin-left: 545px;    
+    background: linear-gradient(45deg, #f4f6fb 50%, #fff 50%);
+    z-index: 100;
+}
+
+.banner > article > .badges{
+    margin-bottom: 20px;
+}
+
+/* Schedule */
+.banner > article > .schedule{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    width: 500px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.banner > article > .schedule > .submit{
+    padding: 10px 30px;
+    margin-left: 40px;
+    border: none;
+    background: rgba(54,86,212,255);
+    border-radius: 4px;
+    color: #fff;
+    font-weight: bold;    
+}
+
+/* Image */
+.banner > img{
+    z-index: 200;
+}

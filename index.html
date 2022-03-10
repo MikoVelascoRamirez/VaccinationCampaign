@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fonts.css">
     <link rel="stylesheet" href="layout.css">
     <link rel="stylesheet" href="styles.css">
     <title>Vaccination</title>
@@ -12,54 +13,61 @@
 
 <body>
     <section>
-        <nav>
+        <nav class="navigation">
             <a>Vaccination</a>
-            <ul>
-                <li><a>Database</a></li>
-                <li><a>Education</a></li>
-                <li><a>News</a></li>
-                <li><a>Regulation</a></li>
-            </ul>
-            <a><button>Hoax Buster</button></a>
+            <div>
+                <ul class="menu">
+                    <li><a>Database</a></li>
+                    <li><a>Education</a></li>
+                    <li><a>News</a></li>
+                    <li><a>Regulation</a></li>
+                </ul>
+                <a><button>Hoax Buster</button></a>
+            </div>
         </nav>
     </section>
 
     <section>
         <main>
-            <div class="triangle-down"></div>
             <section class="banner">
                 <article>
+                    <div class="triangle-down"></div>
+
                     <h1>Fight Virus With Vaccines</h1>
-                    <p>let's stop the pandemic by killing the virus with a vaccine, don´t let yourself and your family
+                    <div class="triangle-left"></div>
+                    <p>Let's stop the pandemic by killing the virus with a vaccine, don´t let yourself and your family
                         get infected</p>
 
-                    <div>
+
+                    <div class="badges">
                         <span><i class="fa-solid fa-shield-check"></i> Best protection</span>
                         <span><i class="fa-solid fa-star"></i> Selected Vaccines</span>
                     </div>
 
                     <span>
-                        <div><i class="fa-solid fa-clock"></i></div> Schedule your vaccinations
+                        <i class="fa-solid fa-clock"></i> Schedule your vaccinations
                     </span>
-                </article>
-                <img />
-            </section>
 
-            <div>
-                <div>
-                    <div><i class="fa-solid fa-location-dot"></i> Location</div>
-                    <b>Jakarta Utara</b>
-                </div>
-                <div>
-                    <div><i class="fa-solid fa-calendar-days"></i> Date</div>
-                    <b>08 July 2021</b>
-                </div>
-                <div>
-                    <div><i class="fa-solid fa-pen-line"></i> Vaccine Type</div>
-                    <b>Moderna</b>
-                </div>
-                <a><button>Submit</button></a>
-            </div>
+                    <div class="schedule">
+                        <div>
+                            <div><i class="fa-solid fa-location-dot"></i> Location</div>
+                            <b>Jakarta Utara</b>
+                        </div>
+                        <div>
+                            <div><i class="fa-solid fa-calendar-days"></i> Date</div>
+                            <b>08 July 2021</b>
+                        </div>
+                        <div>
+                            <div><i class="fa-solid fa-pen-line"></i> Vaccine Type</div>
+                            <b>Moderna</b>
+                        </div>
+                        <button class="submit">Submit</button>
+                    </div>
+
+                </article>
+                <img src="./assets/img/enfermera-full.jpg" alt="enfermera"/>
+
+            </section>
 
             <section>
                 <img src="./assets/img/astrazeneca-logo.png" alt="astra-zeneca-logo">
