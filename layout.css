@@ -1,135 +1,531 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 /* Header */
 
-.navigation{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.navigation {
+  width: 100%;
+  display: flex;
+  padding: 20px 0px;
+  flex-direction: row;
+  justify-content: space-between;
+  background: linear-gradient(
+    to right,
+    #fff 0%,
+    #fff 50%,
+    #e9f1fc 50%,
+    #e9f1fc 100%
+  );
 }
 
-.navigation > a{
-    width: 35%;
-    padding: 25px 80px 0;
-    font-size: 20px;
-    color: rgba(56,88,214,255);
-    font-weight: bold;
-    z-index: 200;
+.navigation > a {
+  width: 20%;
+  /* padding: 25px 80px 0; */
+  font-size: 20px;
+  color: rgba(56, 88, 214, 255);
+  font-weight: bold;
+  z-index: 200;
+  text-align: center;
+  /* border: 1px solid black; */
+  margin: auto;
 }
 
-.navigation > div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 65%;
-    padding: 20px;
-    background: linear-gradient(to right, #fff 0%, #fff 23%, #e9f1fc 23%, #e9f1fc 100%)
+.navigation > .menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 40%;
+  margin: 0 245px;
+  list-style: none;
 }
 
-.navigation > div > a > button{
-    padding: 12px 20px;
-    margin-left: 40px;
-    border: none;
-    background: rgba(54,86,212,255);
-    border-radius: 4px;
-    color: #fff;
-    font-weight: bold;
+.navigation > .menu > button {
+  padding: 12px 20px;
+  /* margin-left: 40px; */
+  /* width: 10%; */
+  border: none;
+  background: rgba(54, 86, 212, 255);
+  border-radius: 4px;
+  color: #fff;
+  font-weight: bold;
 }
 
-.menu {
-    display: flex;
-    flex-direction: row;   
-    justify-content: space-between;
-    list-style: none;
-    width: 400px;
-    border: 1px solid black;
-}
-
-.menu > li{
-    font-size: 15px;
-    color: rgba(109,123,147,255);
-    font-weight: bold;
+.menu > li {
+  font-size: 15px;
+  color: rgba(109, 123, 147, 255);
+  font-weight: bold;
 }
 
 /* Banner */
-.banner{
-    display: flex; 
-}
-
-.banner > *{
-    width: 50%;
-}
-
-.banner > article:not(.triangle-down){
-    padding-top: 70px;
-    padding-bottom: 20px;
-    padding-left: 80px;
-}
-
-.banner > article > .triangle-down{
-    width: 75px;
-    height: 75px;
-    /* background: tomato; */
-    background: linear-gradient(135deg, #fff 50%, #f4f6fb 50%);
-    transform: rotate(45deg);
-    margin-top: -108px;
-    z-index: 100;
-    margin-left: -30px;
-}
-
-.banner > article > h1{
-    font-size: 45px;
-    /* margin: 50px auto 0; */
-    width: 300px; 
-    margin-bottom: 15px;
-    margin-top: 20px;
-}
-
-.banner > article > p{
-    width: 270px;
-    margin-bottom: 30px;
-}
-
-.triangle-left{
-    width: 100px;
-    height: 100px;
-    transform: rotate(45deg);
-    position: absolute;
-    margin-left: 545px;    
-    background: linear-gradient(45deg, #f4f6fb 50%, #fff 50%);
-    z-index: 100;
-}
-
-.banner > article > .badges{
-    margin-bottom: 20px;
-}
-
-/* Schedule */
-.banner > article > .schedule{
-    display: flex;
-    justify-content: space-between;
-    border: 1px solid black;
-    width: 500px;
-    padding: 20px;
-    margin-top: 20px;
-}
-
-.banner > article > .schedule > .submit{
-    padding: 10px 30px;
-    margin-left: 40px;
-    border: none;
-    background: rgba(54,86,212,255);
-    border-radius: 4px;
-    color: #fff;
-    font-weight: bold;    
+.banner {
+  display: flex;  
 }
 
 /* Image */
-.banner > img{
-    z-index: 200;
+.banner > img {
+  z-index: 200;
+}
+
+.banner > * {
+  width: 50%;
+}
+
+.banner > article:not(.triangle-down) {
+  padding-top: 70px;
+  padding-bottom: 20px;
+  padding-left: 80px;
+}
+
+.banner > article > .triangle-down {
+  width: 75px;
+  height: 75px;
+  /* background: tomato; */
+  background: linear-gradient(135deg, #fff 50%, #f4f6fb 50%);
+  transform: rotate(45deg);
+  margin-top: -108px;
+  z-index: 100;
+  margin-left: -30px;
+}
+
+.banner > article > h1 {
+  font-size: 45px;
+  /* margin: 50px auto 0; */
+  width: 300px;
+  margin-bottom: 15px;
+  margin-top: 20px;
+}
+
+.banner > article > p {
+  width: 270px;
+  margin-bottom: 30px;
+  color: #6d7b93;
+}
+
+.triangle-left {
+  width: 100px;
+  height: 100px;
+  transform: rotate(45deg);
+  position: absolute;
+  margin-left: 545px;
+  background: linear-gradient(45deg, #f4f6fb 50%, #fff 50%);
+  z-index: 100;
+}
+
+.banner > article > .badges {
+  margin-bottom: 20px;
+  color: #203e72;
+}
+
+.banner > article > .scheduleTitle > b {
+  color: #203f73;
+}
+
+/* Schedule */
+.banner > article > .schedule {
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid black; */
+  width: 500px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.banner > article > .schedule > .submit {
+  padding: 10px 30px;
+  margin-left: 40px;
+  border: none;
+  background: rgba(54, 86, 212, 255);
+  border-radius: 4px;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* brands */
+.vaccinesBrands {
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: space-evenly;
+  margin: 40px auto;
+  width: 90%;  
+  /* height: 50px; */
+}
+
+.vaccinesBrands > img {
+  width: 20%;
+  /* height: 40px; */
+  filter: grayscale(1);
+  opacity: 0.1;
+}
+
+/* Section of reasons */
+.reasons {
+  padding-left: 80px;
+  padding-bottom: 50px;
+}
+
+.reasons > .up-title {
+    display: flex;
+}
+
+.reasons > .up-title > .left-title{
+    padding-top: 60px;
+}
+
+.reasons > .up-title > .left-title > h3 {
+  font-size: 35px;
+}
+
+.reasons > .up-title > .left-title > p {
+  margin-top: 25px;
+  width: 360px;
+}
+
+.reasons > .up-title > .decorations_three {
+  margin-left: auto;  
+  margin-bottom: 50px;
+}
+
+.reasons > .up-title > .decorations_three > .line{
+    border: 2px solid rgba(244, 246, 251, 0.5);
+    width: 700px;
+}
+
+.reasons > .up-title > .decorations_three > .triangle-up-left {
+  width: 75px;
+  height: 75px;
+  background: linear-gradient(135deg, #fff 50%, #f4f6fb 50%);
+  margin-left: auto;
+}
+
+.reasons > .up-title > .decorations_three > .triangle-down-left {
+  width: 75px;
+  height: 75px;
+  background: linear-gradient(45deg, #fff 50%, #f4f6fb 50%);
+  margin-left: auto;
+}
+
+.reasons > .cards {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.reasons > .cards > article {
+  /* border: 1px solid black; */
+  padding: 30px 30px 40px;
+  width: 22%;
+}
+
+.reasons > .cards > article > .title {
+  width: 140px;
+  font-size: 19px;
+  margin-bottom: 15px;
+}
+
+.reasons > .cards > article > .description {
+  width: 185px;
+  margin-bottom: 30px;
+}
+
+/* Preparations */
+.preparations {
+  display: flex;
+  width: 100%;
+  /* background: tomato; */
+}
+
+.preparations > * {
+  width: 50%;
+}
+
+.preparations > .decorations > .line-2{
+    border: 2px solid rgba(244, 246, 251, 0.5);
+    width: 550px;
+}
+
+.preparations > .decorations > .triangle-up-right {
+  width: 75px;
+  height: 75px;
+  background: linear-gradient(225deg, #fff 50%, #f4f6fb 50%);
+}
+
+.preparations > .decorations > .triangle-down-right {
+  width: 75px;
+  height: 75px;
+  background: linear-gradient(315deg, #fff 50%, #f4f6fb 50%);
+}
+
+.preparations > .decorations > .square {
+  background: #2872db;
+  margin-right: 50px;
+  width: 550px;
+  height: 390px;
+  margin-top: 100px;
+  position: relative;
+  z-index: 100;
+}
+
+.preparations > .decorations > .square > img {
+  position: absolute;
+  z-index: 200;
+  bottom: 0;
+  left: 120px;
+  width: 350px;
+  height: 500px;
+}
+
+/* Preparations Reasons */
+
+.preparations > article > h4 {
+  font-size: 28px;
+  margin-top: 50px;
+  margin-bottom: 25px;
+}
+
+.preparations > article > p {
+  width: 370px;
+}
+
+.preparations > article > div {
+  margin-top: 25px;
+  /* border: 1px solid black */
+}
+
+.preparations > article > div > .accordion {
+  border: 1px solid #f4f6fb;
+  padding: 20px;
+  width: 60%;
+}
+
+/* Emergencies */
+.emergency_contact {
+  display: flex;
+  margin-top: 50px;
+  /* border: 1px solid black; */
+}
+
+.emergency_contact > * {
+  width: 50%;
+}
+
+
+.emergency_contact > .decorations_two > .line{
+    border: 2px solid rgba(244, 246, 251, 0.5);
+    width: 700px;
+}
+
+.emergency_contact > .decorations_two > .triangle-up-left {
+  width: 75px;
+  height: 75px;
+  background: linear-gradient(135deg, #fff 50%, #f4f6fb 50%);
+  margin-left: auto;
+}
+
+.emergency_contact > .decorations_two > .triangle-down-left {
+  width: 75px;
+  height: 75px;
+  background: linear-gradient(45deg, #fff 50%, #f4f6fb 50%);
+  margin-left: auto;
+}
+
+.emergency_contact > .decorations_two > .square {
+  background: #2872db;
+  margin-left: auto;
+  width: 550px;
+  height: 400px;
+  margin-top: 100px;
+  position: relative;
+  z-index: 100;
+}
+
+.emergency_contact > .decorations_two > .square > img {
+  position: absolute;
+  z-index: 200;
+  bottom: 0px;
+  left: 100px;
+  width: 360px;
+}
+
+.emergency_contact > article > h4 {
+  font-size: 28px;
+  margin-top: 50px;
+  margin-bottom: 25px;
+  padding-left: 100px;
+  width: fit-content;
+}
+
+.emergency_contact > article > p {
+  padding-left: 100px;
+  width: 500px;
+}
+
+.emergency_contact > article > div {
+  padding-left: 90px;
+  /* border: 1px solid black; */
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 72px;
+  width: 100%;
+  height: 435px;
+}
+
+.emergency_contact > article > div > .contact {
+  width: 45%;
+  height: 200px;
+  border: 1px solid #f4f6fb;
+  /* border: 1px solid black; */
+  margin: 10px;
+}
+
+.emergency_contact > article > div > .contact > .data-contact {
+  padding-left: 30px;
+  padding-top: 25px;
+  display: flex;
+  width: 100%;
+}
+
+.emergency_contact > article > div > .contact > .data-contact > span {
+  padding: 10px;
+  background: #f1f5ff;
+  border-radius: 7px;
+  color: #2949c7;
+}
+
+.emergency_contact > article > div > .contact > .data-contact > .number > b {
+  font-size: 20px;
+}
+
+.number {
+  width: 100px;
+  height: auto;
+  /* background: tomato ; */
+  margin-left: 10px;
+}
+
+.data-contact {
+  width: 20px;
+}
+
+.active {
+  background: #2949c7;
+  color: #fff;
+}
+
+.selected {
+  border: 4px solid white;
+}
+
+.emergency_contact > article > div > .contact > button {
+  width: 200px;
+  height: 40px;
+  margin-left: 30px;
+  margin-top: 25px;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.emergency_contact > article > div > .contact > button:not(.active) {
+  background: #f1f5ff;
+  color: rgba(54, 86, 212, 255);
+}
+
+/* Footer */
+footer {
+  background: #eef3ff;
+}
+
+footer > .up > article {
+  width: 30%;
+  /* background: yellow; */
+  padding-left: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+footer > .up > article > .title {
+  font-size: 20px;
+  color: #2d4dcb;
+  font-weight: bold;
+}
+
+footer > .up > article > .description {
+  width: 150px;
+  margin-top: 15px;
+}
+
+footer > .up {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer > .up > div {
+  display: flex;
+  /* background: tomato; */
+  width: 70%;
+  padding-top: 50px;
+  justify-content: flex-end;
+}
+
+footer > .up > div > ul {
+  list-style: none;
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 130px;
+  padding-right: 100px;
+}
+
+footer > .up > div > ul > .title-item {
+  font-size: 18px;
+  font-weight: bold;
+  color: #234174;
+}
+
+footer > .down {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-left: 100px;
+  color: #77859c;
+  padding-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 50px;
+  position: absolute;
+  z-index: 200;
+}
+
+footer > .down > p:nth-child(2) > small:nth-child(1) {
+  margin-right: 15px;
+}
+
+footer > .down > p:nth-child(2) > small:nth-child(2) {
+  margin-right: 100px;
+}
+
+footer > .triangles {
+  display: flex;
+  margin-left: auto;
+  width: fit-content;
+  margin-right: 120px;
+}
+
+footer > .triangles > .triangle-down-right {
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(135deg, #eef3ff 50%, #e2e9f9 50%);
+  margin-left: auto;
+}
+
+footer > .triangles > .triangle-down-left {
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(225deg, #eef3ff 50%, #e2e9f9 50%);
+  margin-left: auto;
 }

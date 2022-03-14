@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="fonts.css">
     <link rel="stylesheet" href="layout.css">
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Vaccination</title>
 </head>
 
@@ -15,15 +16,13 @@
     <section>
         <nav class="navigation">
             <a>Vaccination</a>
-            <div>
-                <ul class="menu">
-                    <li><a>Database</a></li>
-                    <li><a>Education</a></li>
-                    <li><a>News</a></li>
-                    <li><a>Regulation</a></li>
-                </ul>
-                <a><button>Hoax Buster</button></a>
-            </div>
+            <ul class="menu">
+                <li><a>Database</a></li>
+                <li><a>Education</a></li>
+                <li><a>News</a></li>
+                <li><a>Regulation</a></li>
+                <button>Hoax Buster</button>
+            </ul>
         </nav>
     </section>
 
@@ -44,9 +43,10 @@
                         <span><i class="fa-solid fa-star"></i> Selected Vaccines</span>
                     </div>
 
-                    <span>
-                        <i class="fa-solid fa-clock"></i> Schedule your vaccinations
-                    </span>
+                    <div class="scheduleTitle">
+                        <i class="fa-solid fa-clock"></i>
+                        <b>Schedule your vaccinations</b>
+                    </div>
 
                     <div class="schedule">
                         <div>
@@ -65,61 +65,80 @@
                     </div>
 
                 </article>
-                <img src="./assets/img/enfermera-full.jpg" alt="enfermera"/>
+                <img src="./assets/img/enfermera1.jpg" alt="enfermera" />
 
             </section>
 
-            <section>
-                <img src="./assets/img/astrazeneca-logo.png" alt="astra-zeneca-logo">
-                <img src="./assets/img/sinovac-logo.png" alt="sinovac-logo">
-                <img src="./assets/img/pfizer-logo.png" alt="pfizer-logo">
+            <section class="vaccinesBrands">
+                <img src="./assets/img/astra.png" alt="astra-zeneca-logo">
+                <img src="./assets/img/Sinovac_logo.png" alt="sinovac-logo">
+                <img src="./assets/img/pfizer-logo.jpg" alt="pfizer-logo">
                 <img src="./assets/img/moderna-logo.png" alt="moderna-logo">
             </section>
 
-            <section>
-                <h3>Why should I vaccine?</h3>
-                <p>
-                    In order to avoid any doubts about getting the COVID-19 vaccine, identify the following 4 benefits of
-                    COVID-19 vaccination :
-                </p>                
+            <section class="reasons">
+                <div class="up-title">
+
+                    <div class="left-title">
+                        <h3>Why should I vaccine?</h3>
+                        <p>
+                            In order to avoid any doubts about getting the COVID-19 vaccine, identify the following 4 benefits
+                            of
+                            COVID-19 vaccination :
+                        </p>
+                    </div>
+
+                    <div class="decorations_three">
+                        <div class="triangle-up-left"></div>
+                        <hr class="line">
+                        <div class="triangle-down-left"></div>
+                    </div>
+
+                </div>
+
+
+                <section class="cards">
+                    <article>
+                        <span class="material-icons">analytics</span>
+                        <p class="title"><b>Minimize the spread of viruses</b></p>
+                        <p class="description">Vaccine has been proven effective to prevent someone from getting
+                            infected with Coronavirus</p>
+                    </article>
+
+                    <article>
+                        <span class="material-icons">gpp_good</span>
+                        <p class="title"><b>Forming antibodies</b></p>
+                        <p class="description">COVID-19 vaccine proven to help shape antibody response for immune system
+                        </p>
+                    </article>
+
+                    <article>
+                        <span class="material-icons">groups</span>
+                        <p class="title"><b>Protecting people nearby</b></p>
+                        <p class="description">The benefits of COVID-19 vaccination are the vaccine that we get can also
+                            help protect people around us</p>
+                    </article>
+
+                    <article>
+                        <span class="material-icons">insights</span>
+                        <p class="title"><b>Creating group immunity</b></p>
+                        <p class="description">COVID-19 vaccination is also beneficial for creating group immunity or
+                            herd immunity</p>
+                    </article>
+                </section>
             </section>
 
-            <section>
-                <article>
-                    <div>
-                        <i class="fa-solid fa-sliders-simple"></i>
-                    </div>
-                    <b>Minimize the spread of viruses</b>
-                    <p>Vaccine has been proven effective to prevent someone from getting infected with Coronavirus</p>
-                </article>
 
-                <article>
-                    <div>
-                        <i class="fa-solid fa-shield-check"></i>
-                    </div>
-                    <b>Forming antibodies</b>
-                    <p>COVID-19 vaccine proven to help shape antibody response for immune system</p>
-                </article>
-
-                <article>
-                    <div>
-                        <i class="fa-solid fa-users"></i>
-                    </div>
-                    <b>Protecting people nearby</b>
-                    <p>The benefits of COVID-19 vaccination are the vaccine that we get can also help protect around us</p>
-                </article>
-
-                <article>
-                    <div>
-                        <i class="fa-solid fa-chart-line"></i>
-                    </div>
-                    <b>Creating group immunity</b>
-                    <p>COVID-19 vaccination is also beneficial for creating group immunity or herd immunity</p>
-                </article>
-            </section>
 
             <section class="preparations">
-                <img />
+                <div class="decorations">
+                    <div class="triangle-up-right"></div>
+                    <hr class="line-2">
+                    <div class="triangle-down-right"></div>
+                    <div class="square">
+                        <img src="./assets/img/women.png" />
+                    </div>
+                </div>
                 <article>
                     <h4>Preparations Before Vaccine</h4>
                     <p>the success of vaccines is strongly influenced by the strength of the body´s immune system.
@@ -127,38 +146,46 @@
                     </p>
 
                     <div>
-                        <article>
-                            <i class="fa-solid fa-shield-xmark"></i>
+                        <article class="accordion">
+                            <span class="material-icons">gpp_bad</span>
                             <b>Avoid Alcoholic beverages</b>
-                            <button><i class="fa-solid fa-caret-down"></i></button>
+                            <button>
+                                <span class="material-icons">arrow_drop_down</span>
+                            </button>
                         </article>
 
-                        <article>
-                            <i class="fa-solid fa-square-xmark"></i>
+                        <article class="accordion">
+                            <span class="material-icons">disabled_by_default</span>
                             <b>Avoid stress</b>
-                            <button><i class="fa-solid fa-caret-up"></i></button>
+                            <button>
+                                <span class="material-icons">arrow_drop_up</span>
+                            </button>
                             <p>
                                 Stress has a profound effect on inumne work. Moreover, prolonged stress can
                                 increase cortisol production and oxidative stress in the body.
                             </p>
                         </article>
 
-                        <article>
-                            <i class="fa-solid fa-square-poll-vertical"></i>
+                        <article class="accordion">
+                            <span class="material-icons">assessment</span>
                             <b>Eat healthy food</b>
-                            <button><i class="fa-solid fa-caret-down"></i></button>
+                            <button>
+                                <span class="material-icons">arrow_drop_down</span>
+                            </button>
                         </article>
 
-                        <article>
-                            <i class="fa-solid fa-square-check"></i>
+                        <article class="accordion">                            
                             <b>Get enough sleep</b>
-                            <button><i class="fa-solid fa-caret-down"></i></button>
+                            <button>
+                                <span class="material-icons">arrow_drop_down</span>
+                            </button>
                         </article>
 
-                        <article>
-                            <i class="fa-solid fa-heart"></i>
+                        <article class="accordion">                            
                             <b>Get enough sleep</b>
-                            <button><i class="fa-solid fa-caret-down"></i></button>
+                            <button>
+                                <span class="material-icons">arrow_drop_down</span>
+                            </button>
                         </article>
                     </div>
                 </article>
@@ -171,64 +198,91 @@
                         similar symptoms such as Covid-19, make sure you also take care of yourself
                         before reporting us :
                     </p>
-                    
+
                     <div>
-                        <div>
-                            <i class="fa-solid fa-phone"></i>
-                            <b>Call</b>
-                            <small>021.123.145.14</small>
+                        <div class="contact">
+                            <div class="data-contact">
+                                <span class="material-icons">call</span>
+                                <div class="number">
+                                    <b>Call</b>
+                                    <small>021.123.145.14</small>
+                                </div>
+                            </div>
                             <button>Call Now</button>
                         </div>
-                        
-                        <div>
-                            <i class="fa-solid fa-comment-dots"></i>
-                            <b>Chat</b>
-                            <small>021.123.145.14</small>
-                            <button>Chat Now</button>
+
+                        <div class="contact">
+                            <div class="data-contact">
+                                <span class="material-icons selected">textsms</span>
+                                <div class="number">
+                                    <b>Chat</b>
+                                    <small>021.123.145.14</small>
+                                </div>
+                            </div>
+                            <button class="active">Chat Now</button>
                         </div>
-                        
-                        <div>
-                            <i class="fa-solid fa-video"></i>
-                            <b>Video Call</b>
-                            <small>021.123.145.14</small>
+
+                        <div class="contact">
+                            <div class="data-contact">
+                                <span class="material-icons">video_call</span>
+                                <div class="number">
+                                    <b>Video Call</b>
+                                    <small>021.123.145.14</small>
+                                </div>
+                            </div>
                             <button>Video Call Now</button>
                         </div>
-                        
-                        <article>
-                            <i class="fa-solid fa-envelope"></i>
-                            <b>Message</b>
-                            <small>021.123.145.14</small>
+
+                        <div class="contact">
+                            <div class="data-contact">
+                                <span class="material-icons">email</span>
+                                <div class="number">
+                                    <b>Message</b>
+                                    <small>021.123.145.14</small>
+                                </div>
+                            </div>
                             <button>Message Now</button>
-                        </article>
+                        </div>
 
                     </div>
                 </article>
-                <img />
+
+                <div class="decorations_two">
+                    <div class="triangle-up-left"></div>
+                    <hr class="line">
+                    <div class="triangle-down-left"></div>
+                    <div class="square">
+                        <img src="./assets/img/doctor.png"/>
+                    </div>
+                </div>
+                
             </section>
         </main>
+    </section>
 
+    <section>
         <footer>
             <div class="up">
                 <article>
-                    <p>Vaccination</p>
-                    <p>Our goal is to help the world free from the ongoing pandemic</p>
+                    <p class="title">Vaccination</p>
+                    <p class="description">Our goal is to help the world free from the ongoing pandemic</p>
                 </article>
-    
+
                 <div>
                     <ul>
-                        <li>About</li>
+                        <li class="title-item">About</li>
                         <li>About us</li>
                         <li>Features</li>
                         <li>News & Blog</li>
                     </ul>
                     <ul>
-                        <li>Company</li>
+                        <li class="title-item">Company</li>
                         <li>How We Work?</li>
                         <li>Capital</li>
                         <li>Security</li>
                     </ul>
                     <ul>
-                        <li>Support</li>
+                        <li class="title-item">Support</li>
                         <li>FAQs</li>
                         <li>Support Center</li>
                         <li>Contact Us</li>
@@ -238,15 +292,20 @@
 
             <div class="down">
                 <p><small>@2021 Vacinnation. All rights reserved</small></p>
-                <p><small>Terms & Agreements    Privacy Policy</small></p>
+                <p>
+                    <small>Terms & Agreements</small>
+                    <small>Privacy Policy</small>
+                </p>
             </div>
-
-            <div class="triangle-up"></div>
+            
+            <div class="triangles">
+                <div class="triangle-down-right"></div>
+                <div class="triangle-down-left"></div>
+            </div>
 
         </footer>
     </section>
 
-    <script src="https://kit.fontawesome.com/7f3d479cce.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
