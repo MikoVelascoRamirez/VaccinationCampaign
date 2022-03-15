@@ -3,7 +3,6 @@
   margin: 0;
   padding: 0;
 }
-
 /* Header */
 
 .navigation {
@@ -22,15 +21,13 @@
 }
 
 .navigation > a {
-  width: 20%;
-  /* padding: 25px 80px 0; */
-  font-size: 20px;
+  width: fit-content;
+  font-size: 24px;
+  font-family: 'Avenir LT Pro 65 Medium';
   color: rgba(56, 88, 214, 255);
-  font-weight: bold;
   z-index: 200;
-  text-align: center;
-  /* border: 1px solid black; */
-  margin: auto;
+  text-align: left;
+  margin-left: 80px;
 }
 
 .navigation > .menu {
@@ -44,19 +41,20 @@
 
 .navigation > .menu > button {
   padding: 12px 20px;
-  /* margin-left: 40px; */
-  /* width: 10%; */
   border: none;
   background: rgba(54, 86, 212, 255);
   border-radius: 4px;
   color: #fff;
-  font-weight: bold;
+  font-family: "Rotunda";
+  font-size: 15px;
+  letter-spacing: 0.6px;
 }
 
 .menu > li {
   font-size: 15px;
-  color: rgba(109, 123, 147, 255);
-  font-weight: bold;
+  /* font-family: 'Poppins', sans-serif; */
+  font-family: "Stolzl Medium";
+  color: #7b899f;
 }
 
 /* Banner */
@@ -91,17 +89,22 @@
 }
 
 .banner > article > h1 {
-  font-size: 45px;
-  /* margin: 50px auto 0; */
-  width: 300px;
-  margin-bottom: 15px;
-  margin-top: 20px;
+  font-size: 55px;
+  font-family: 'Avenir LT Pro 65 Medium';
+  width: 370px;
+  line-height: 60px;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  color: #1f3e72;
 }
 
 .banner > article > p {
-  width: 270px;
-  margin-bottom: 30px;
-  color: #6d7b93;
+  width: 350px;
+  margin-bottom: 40px;
+  color: rgba(109,123,147,0.8);
+  font-family: "TT Commons W01";
+  font-size: 19px;
+  line-height: 30px;
 }
 
 .triangle-left {
@@ -110,6 +113,7 @@
   transform: rotate(45deg);
   position: absolute;
   margin-left: 545px;
+  margin-top: 70px;
   background: linear-gradient(45deg, #f4f6fb 50%, #fff 50%);
   z-index: 100;
 }
@@ -117,30 +121,104 @@
 .banner > article > .badges {
   margin-bottom: 20px;
   color: #203e72;
+  font-size: 13px;
+  font-family: "Stolzl Medium";
+  width: 320px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.banner > article > .badges > div{
+  display: flex;
+  align-items: center;
+}
+
+.banner > article > .badges > div > span{
+  color: #ffd012;
+  margin-right: 10px;
+}
+
+.banner > article > .scheduleTitle{
+  margin-top: 300px;
+  width: fit-content;
+}
+
+.banner > article > .scheduleTitle > span{
+  padding: 5px;
+  background: #f1f5ff;
+  border-radius: 5px;
+  color: #2949c7;
+  font-size: 15px;
 }
 
 .banner > article > .scheduleTitle > b {
   color: #203f73;
+  font-size: 19px;
+  font-family: "TT Commons W01";
+  margin-left: 8px;
 }
 
 /* Schedule */
 .banner > article > .schedule {
   display: flex;
   justify-content: space-between;
-  /* border: 1px solid black; */
-  width: 500px;
+  align-items: center;
+  background: rgba(255,255,255, 0.9);
+  width: 800px;
   padding: 20px;
   margin-top: 20px;
+  position: absolute;
+  z-index: 300;
+  /* border: 1px solid black; */
+}
+
+.banner > article > .schedule > div{
+  width: 200px;
+  padding: 10px;
+}
+
+.banner > article > .schedule > div > b{
+  color: #203f73;
+  font-size: 19px;
+  font-family: "TT Commons W01";
+  /* width: 100px;  */
+  text-align: left;
+}
+
+.banner > article > .schedule > div > div{
+  margin-bottom: 10px;
+  font-family: "TT Commons W01";
+  color: #6d7b93;
+  font-size: 20px;
+  width: fit-content;
+}
+
+.banner > article > .schedule > div > div > span{
+  padding: 5px;
+  background: #f1f5ff;
+  border-radius: 5px;
+  color: #2949c7;
+  font-size: 15px;
+  margin-right: 8px;  
+}
+
+.banner > article > .schedule > div > b{
+  text-align: right;
+  margin-left: 38px;
 }
 
 .banner > article > .schedule > .submit {
-  padding: 10px 30px;
+  /* padding: 5px 10px; */
+  height: 45px;
+  width: 125px;
   margin-left: 40px;
+  margin-right: 15px;
   border: none;
   background: rgba(54, 86, 212, 255);
   border-radius: 4px;
   color: #fff;
-  font-weight: bold;
+  font-family: "Rotunda";
+  letter-spacing: 0.5px;
 }
 
 /* brands */
@@ -162,7 +240,7 @@
 
 /* Section of reasons */
 .reasons {
-  padding-left: 80px;
+  padding-left: 110px;
   padding-bottom: 50px;
 }
 
@@ -176,11 +254,17 @@
 
 .reasons > .up-title > .left-title > h3 {
   font-size: 35px;
+  font-family: 'Avenir LT Pro 65 Medium';;
+  color: #1f3e72;
 }
 
 .reasons > .up-title > .left-title > p {
   margin-top: 25px;
-  width: 360px;
+  width: 430px;
+  color: rgba(109,123,147,0.8);
+  font-family: "TT Commons W01";
+  font-size: 19px;
+  line-height: 30px;
 }
 
 .reasons > .up-title > .decorations_three {
@@ -190,7 +274,7 @@
 
 .reasons > .up-title > .decorations_three > .line{
     border: 2px solid rgba(244, 246, 251, 0.5);
-    width: 700px;
+    width: 600px;
 }
 
 .reasons > .up-title > .decorations_three > .triangle-up-left {
@@ -210,25 +294,41 @@
 .reasons > .cards {
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  width: 95%;
   margin-top: 40px;
 }
 
 .reasons > .cards > article {
-  /* border: 1px solid black; */
+  border: 3px solid rgba(244, 246, 251, 0.6);
   padding: 30px 30px 40px;
   width: 22%;
+  border-radius: 10px;
 }
 
-.reasons > .cards > article > .title {
-  width: 140px;
-  font-size: 19px;
+.reasons > .cards > article > span{
+  padding: 10px;
+  background: #f1f5ff;
+  border-radius: 7px;
+  color: #2949c7;
   margin-bottom: 15px;
 }
 
+.reasons > .cards > article > .title {
+  width: 160px;
+  font-size: 20px;
+  margin-bottom: 15px;
+  font-family: "Cerebri Sans";
+  color: #1f3e72;
+  font-weight: lighter;
+}
+
 .reasons > .cards > article > .description {
-  width: 185px;
+  width: 200px;
   margin-bottom: 30px;
+  color: rgba(109,123,147,1.0 );
+  font-family: "TT Commons W01";
+  font-size: 16px;
+  line-height: 20px;
 }
 
 /* Preparations */
@@ -281,41 +381,87 @@
 /* Preparations Reasons */
 
 .preparations > article > h4 {
-  font-size: 28px;
+  font-size: 35px;
   margin-top: 50px;
   margin-bottom: 25px;
+  font-family: 'Avenir LT Pro 65 Medium';;
+  color: #1f3e72;
 }
 
 .preparations > article > p {
-  width: 370px;
+  width: 450px;
+  color: rgba(109,123,147,1.0);
+  font-family: "TT Commons W01";
+  font-size: 19px;
+  line-height: 30px;
 }
 
 .preparations > article > div {
-  margin-top: 25px;
-  /* border: 1px solid black */
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 390px;
 }
 
 .preparations > article > div > .accordion {
-  border: 1px solid #f4f6fb;
-  padding: 20px;
-  width: 60%;
+  padding: 10px;
+  width: 65%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.preparations > article > div > .accordion > span{
+  padding: 5px;
+  background: #f1f5ff;
+  border-radius: 5px;
+  color: #2949c7;
+  font-size: 15px;
+  margin-right: 8px;
+}
+
+.preparations > article > div > .accordion > b{
+  width: 250px;
+  font-size: 16px;
+  font-family: "Cerebri Sans";
+  color: #1f3e72;
+  /* background: tomato; */
+  height: 25px;
+}
+
+.opened{
+  /* background: green; */
+  padding: 10px;
+  margin-left: 20px;
+
+  color: rgba(109,123,147,0.8);
+  font-family: "TT Commons W01";
+  font-size: 16px;
+  line-height: 20px;
+  width: 80%;
+}
+
+.preparations > article > div > .accordion > button{
+  margin-left: auto;
+  border: none;
+  color: #2949c7;
 }
 
 /* Emergencies */
 .emergency_contact {
   display: flex;
-  margin-top: 50px;
-  /* border: 1px solid black; */
+  margin-top: 50px;  
+  width: 100%;
 }
 
 .emergency_contact > * {
   width: 50%;
 }
 
-
 .emergency_contact > .decorations_two > .line{
     border: 2px solid rgba(244, 246, 251, 0.5);
-    width: 700px;
+    width: 600px;
 }
 
 .emergency_contact > .decorations_two > .triangle-up-left {
@@ -356,29 +502,33 @@
   margin-bottom: 25px;
   padding-left: 100px;
   width: fit-content;
+  font-family: 'Avenir LT Pro 65 Medium';;
+  color: #1f3e72;
 }
 
 .emergency_contact > article > p {
   padding-left: 100px;
-  width: 500px;
+  width: 560px;
+  color: rgba(109,123,147,1.0);
+  font-family: "TT Commons W01";
+  font-size: 19px;
+  line-height: 28px;
 }
 
 .emergency_contact > article > div {
   padding-left: 90px;
-  /* border: 1px solid black; */
   display: flex;
   flex-wrap: wrap;
-  margin-top: 72px;
+  margin-top: 55px;
   width: 100%;
-  height: 435px;
+  height: 405px;
 }
 
 .emergency_contact > article > div > .contact {
-  width: 45%;
-  height: 200px;
+  width: 225px;
+  height: 180px;
   border: 1px solid #f4f6fb;
-  /* border: 1px solid black; */
-  margin: 10px;
+  margin: 0px 10px 40px;
 }
 
 .emergency_contact > article > div > .contact > .data-contact {
@@ -396,18 +546,46 @@
 }
 
 .emergency_contact > article > div > .contact > .data-contact > .number > b {
-  font-size: 20px;
+  font-size: 18px;
+  font-family: "Cerebri Sans";
+  color: #1f3e72;
+}
+
+.emergency_contact > article > div > .contact > .data-contact > .number > small{
+  color: rgba(109,123,147,1.0 );
+  font-family: "TT Commons W01";
+  font-size: 14px;  
 }
 
 .number {
-  width: 100px;
+  width: fit-content;
   height: auto;
-  /* background: tomato ; */
   margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .data-contact {
   width: 20px;
+}
+
+.emergency_contact > article > div > .contact > button{
+  width: 160px;
+  height: 47px;
+  margin-left: 30px;
+  margin-top: 25px;
+  border: none;
+  border-radius: 4px;
+  font-size: 15px;
+  font-family: "Rotunda";
+  letter-spacing: 0.6px;
+}
+
+.not-active {
+  background: #f1f5ff;
+  color: rgba(54, 86, 212, 255);
+  font-weight: 600;
 }
 
 .active {
@@ -415,28 +593,10 @@
   color: #fff;
 }
 
-.selected {
-  border: 4px solid white;
-}
-
-.emergency_contact > article > div > .contact > button {
-  width: 200px;
-  height: 40px;
-  margin-left: 30px;
-  margin-top: 25px;
-  border: none;
-  border-radius: 4px;
-  font-weight: bold;
-}
-
-.emergency_contact > article > div > .contact > button:not(.active) {
-  background: #f1f5ff;
-  color: rgba(54, 86, 212, 255);
-}
-
 /* Footer */
 footer {
   background: #eef3ff;
+  margin-top: 60px;
 }
 
 footer > .up > article {
@@ -448,14 +608,19 @@ footer > .up > article {
 }
 
 footer > .up > article > .title {
-  font-size: 20px;
+  font-size: 27px;
   color: #2d4dcb;
   font-weight: bold;
+  font-family: 'Avenir LT Pro 65 Medium';
 }
 
 footer > .up > article > .description {
-  width: 150px;
+  width: 160px;
   margin-top: 15px;
+  font-family: "TT Commons W01";
+  color: #77859c;
+  line-height: 25px;
+  font-size: 17px;
 }
 
 footer > .up {
@@ -473,18 +638,21 @@ footer > .up > div {
 
 footer > .up > div > ul {
   list-style: none;
-  /* border: 1px solid black; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 130px;
+  height: 150px;
   padding-right: 100px;
+  font-family: "TT Commons W01";
+  font-size: 17px;
+  color: #77859c;
 }
 
 footer > .up > div > ul > .title-item {
-  font-size: 18px;
+  font-size: 21px;
   font-weight: bold;
   color: #234174;
+  font-family: 'Avenir LT Pro 65 Medium';
 }
 
 footer > .down {
@@ -494,11 +662,11 @@ footer > .down {
   padding-left: 100px;
   color: #77859c;
   padding-bottom: 10px;
-  font-size: 18px;
-  font-weight: bold;
+  font-size: 20px;
   margin-top: 50px;
   position: absolute;
   z-index: 200;
+  font-family: "TT Commons W01";
 }
 
 footer > .down > p:nth-child(2) > small:nth-child(1) {
