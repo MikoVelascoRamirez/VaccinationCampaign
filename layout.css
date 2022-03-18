@@ -9,6 +9,7 @@
   width: 100%;
   display: flex;
   padding: 20px 0px;
+  position: relative;
   flex-direction: row;
   justify-content: space-between;
   background: linear-gradient(
@@ -18,6 +19,16 @@
     #e9f1fc 50%,
     #e9f1fc 100%
   );
+}
+
+.navigation::after{
+  content: '';
+  width: 500px;
+  height: 75px;
+  top:0;
+  left: 50%;
+  position: absolute;
+  box-shadow: 0px 0px 15px#e7f3fc;
 }
 
 .navigation > a {
@@ -163,13 +174,24 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: rgba(255,255,255, 0.9);
+  background: rgba(255,255,255, 0.93);
   width: 800px;
   padding: 20px;
   margin-top: 20px;
-  position: absolute;
+  position: relative;
   z-index: 300;
-  /* border: 1px solid black; */
+  border: 2px solid #fff;
+  border-radius:5px;
+}
+
+.banner > article > .schedule::before{
+  content: "";
+  width: 571px;
+  height: 117px;
+  position: absolute;
+  z-index: -10;
+  border-radius: 5px;
+  box-shadow: 0px 20px 35px #e4ecfa;
 }
 
 .banner > article > .schedule > div{
@@ -222,18 +244,25 @@
 }
 
 /* brands */
-.vaccinesBrands {
-  /* border: 1px solid black; */
+/* .vaccinesBrands {
   display: flex;
   justify-content: space-evenly;
   margin: 40px auto;
   width: 90%;  
-  /* height: 50px; */
 }
 
 .vaccinesBrands > img {
   width: 20%;
-  /* height: 40px; */
+  filter: grayscale(1);
+  opacity: 0.1;
+} */
+
+.vaccinesBrands{
+  width: 988px;
+  height: 61px;
+  background-image: url('./assets/img/banner5.png');
+  background-repeat: no-repeat;
+  margin: 70px auto;
   filter: grayscale(1);
   opacity: 0.1;
 }
@@ -298,11 +327,34 @@
   margin-top: 40px;
 }
 
+
 .reasons > .cards > article {
   border: 3px solid rgba(244, 246, 251, 0.6);
   padding: 30px 30px 40px;
   width: 22%;
   border-radius: 10px;
+  background: #fff;
+}
+
+.reasons > .cards > .hovered{
+  position: relative;
+  border: none;
+}
+
+.reasons > .cards > .hovered > span{
+  border: 1px solid white;
+}
+
+.reasons > .cards > .hovered::after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 220px;
+  top: 20px;
+  left: 0;
+  z-index: -1;
+  box-shadow: 0px 80px 35px 9px#e8effb;
+  border-radius: 15px;
 }
 
 .reasons > .cards > article > span{
@@ -311,6 +363,7 @@
   border-radius: 7px;
   color: #2949c7;
   margin-bottom: 15px;
+  transform: rotateX(-20deg);
 }
 
 .reasons > .cards > article > .title {
@@ -412,6 +465,7 @@
   align-items: center;
 }
 
+
 .preparations > article > div > .accordion > span{
   padding: 5px;
   background: #f1f5ff;
@@ -419,6 +473,10 @@
   color: #2949c7;
   font-size: 15px;
   margin-right: 8px;
+}
+
+.preparations > article > div > .accordion:nth-child(2){
+  box-shadow: 0px 12px 30px #e7f3fc;
 }
 
 .preparations > article > div > .accordion > b{
@@ -439,7 +497,7 @@
   font-family: "TT Commons W01";
   font-size: 16px;
   line-height: 20px;
-  width: 80%;
+  width: 80%;  
 }
 
 .preparations > article > div > .accordion > button{
@@ -529,6 +587,24 @@
   height: 180px;
   border: 1px solid #f4f6fb;
   margin: 0px 10px 40px;
+  background: #fff;
+}
+
+.emergency_contact > article > div > .contact:nth-child(2){
+  position: relative;
+  border: none;
+}
+
+.emergency_contact > article > div > .contact:nth-child(2)::after{
+  content: "";
+  position: absolute;
+  width: 90%;
+  height: 120px;
+  top: 50px;
+  left: 10px;
+  z-index: -1;
+  box-shadow: 0px 10px 20px 12px#e8effb;
+  border-radius: 15px;
 }
 
 .emergency_contact > article > div > .contact > .data-contact {
@@ -536,6 +612,26 @@
   padding-top: 25px;
   display: flex;
   width: 100%;
+}
+
+.active{
+  position: relative;
+  border: none;
+  background: #2949c7;
+  color: #fff;
+}
+
+.active::before{
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 30px;
+  width: 0px;
+  height: 0px;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 40px solid transparent;
+  box-shadow: 0px 15px 20px rgba(108, 122, 137, 0.3);
 }
 
 .emergency_contact > article > div > .contact > .data-contact > span {
